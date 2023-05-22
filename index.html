@@ -1,58 +1,131 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>key</title>
+
+  <title>currency converter </title>
+
 </head>
 
 <style>
-  
-  button{
-    
-    width:60%;
-    height:30px;
-    border-color: transparent;
-    border-radius:  100px ;
-    border-color: black;
-    background-color: black;
-    color:cyan;
-    position: absolute;
-    left:20%;
-    top:50%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border:1px solid cyan;
-  }
-  
-  button:hover{
-   
-   box-shadow:3px 2px 5px cyan;
-   transition: 1s;
-   cursor: pointer;
-   color: rgb(46, 51, 56);
-   background-color:rgb(79, 240, 232);
-   
-  
-   
-  }
 
+#in{
+
+  height: 25px;
+
+  margin: 5px;
+
+  border:2px solid black;
+
+  width: 400px;
+
+}
+
+#inn{
+
+  height: 25px;
+
+  margin: 5px;
+
+  border:2px solid black;
+
+  width: 400px;
+
+}
+
+div{
+
+  height: auto;
+
+  width:60%;
+
+  margin-top: 50%;
+
+  margin-left: 20%;
+
+}
+
+button{
+
+  margin-left: 10%;
+
+  width: 300px;
+
+}
+
+h1{
+
+  text-align: center;
+
+  color: white;
+
+}
+
+body{
+
+  background-image: url(/gallery_75_colour_iphone_6_wallpaper_ios8_color_swirls_640.jpg);
+
+  background-repeat: no-repeat;
+
+}
+
+</style> 
+
+<body>
 
   
-  
-</style>
 
-<body bgcolor="black">
-<button id="btn" onclick="fn1()"> Click me</button>
+  
+
+  <div>
+
+     <h1> ₹ 🔁  $</h1>
+
+  <input type="number" id="in" placeholder="currency box"/><br>
+
+  <button onclick="fn1()">convert into doller</button><br><br>
+
+    <button onclick="fn2()">convert into rupees</button><br>
+
+  <input id="inn" placeholder="output"/>
+
+  
+
+  </div>
+
+  
+
 </body>
 
-
 <script>
-  function fn1(){
-   document.write("haa haaa haa you got fooled!!!!😂🤣🤣");
-  }
 
-  
+function fn1(){
+
+let ind= document.getElementById("in").value;
+
+let innd= document.getElementById("inn");
+
+innd.value=(ind/82.82+" dollers")
+
+}
+
+function fn2(){
+
+let ind= document.getElementById("in").value;
+
+let innd= document.getElementById("inn");
+
+innd.value=(ind*82.82+" rupees")
+
+}
+
 </script>
 
 </html>
